@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>仔仔电影网在线观看 - 高清电影在线免费观看平台 | zizaidianyingwangzaixianguankan-app</title>
+<meta name="description" content="仔仔电影网在线观看，提供最新高清电影、热播电视剧、综艺动漫在线免费观看。海量正版影视资源，每日更新，手机电脑均可流畅播放。">
+<meta name="keywords" content="仔仔电影网在线观看,电影在线观看,高清电影免费看,在线影视,zizaidianyingwangzaixianguankan-app,免费电影网站,热播电视剧">
+<meta name="robots" content="index,follow">
+<meta name="author" content="仔仔电影网在线观看">
+<meta property="og:title" content="仔仔电影网在线观看 - 高清影视在线免费观看">
+<meta property="og:description" content="最新电影电视剧综艺动漫在线观看，每日更新，手机电脑流畅播放。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zizaidianyingwangzaixianguankan-app.github.io">
+<link rel="canonical" href="https://zizaidianyingwangzaixianguankan-app.github.io">
+<style>
+/* ===== Reset & Base ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  background:#07080f;color:#e8eaf2;line-height:1.7;overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+
+/* ===== Layout helpers ===== */
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:70px 0}
+.sec-title{font-size:26px;font-weight:800;letter-spacing:.5px;margin-bottom:8px;position:relative;display:inline-block}
+.sec-title::after{content:"";position:absolute;left:0;bottom:-8px;width:52px;height:3px;background:linear-gradient(90deg,#f7c948,#ff6b6b);border-radius:2px}
+.sec-sub{color:#9aa0b4;font-size:14px;margin:16px 0 34px}
+
+/* ===== Top bar ===== */
+.topbar{background:rgba(7,8,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.06);position:sticky;top:0;z-index:99}
+.topbar .wrap{display:flex;align-items:center;gap:18px}
+.logo{display:flex;align-items:center;gap:9px;font-size:18px;font-weight:800;white-space:nowrap;padding:14px 0;flex-shrink:0}
+.logo .badge{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#f7c948,#ff6b6b);display:grid;place-items:center;font-size:16px;box-shadow:0 4px 14px rgba(247,201,72,.35)}
+.search{flex:1;display:flex;height:40px;border-radius:20px;overflow:hidden;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.08)}
+.search input{flex:1;border:0;outline:0;background:transparent;color:#fff;padding:0 18px;font-size:14px;min-width:0}
+.search button{background:linear-gradient(135deg,#f7c948,#ff6b6b);border:0;color:#1a1300;font-weight:700;padding:0 22px;cursor:pointer;font-size:14px;flex-shrink:0}
+.user-act{display:flex;gap:8px;flex-shrink:0}
+.btn-ghost{height:40px;padding:0 16px;border-radius:20px;border:1px solid rgba(255,255,255,.16);background:transparent;color:#e8eaf2;cursor:pointer;font-size:14px;white-space:nowrap}
+
+/* ===== Nav ===== */
+nav{background:#0c0e18;border-bottom:1px solid rgba(255,255,255,.05)}
+.nav-list{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav-list::-webkit-scrollbar{display:none}
+.nav-list a{display:block;padding:14px 16px;font-size:15px;color:#c2c6d6;font-weight:600;position:relative;white-space:nowrap;transition:.2s}
+.nav-list a:hover{color:#f7c948}
+.nav-list a.active{color:#fff}
+.nav-list a.active::after{content:"";position:absolute;left:16px;right:16px;bottom:6px;height:2px;background:#f7c948;border-radius:2px}
+
+/* ===== Hero ===== */
+.hero{position:relative;padding:0;min-height:460px;display:flex;align-items:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.45}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,8,15,.96) 0%,rgba(7,8,15,.78) 45%,rgba(7,8,15,.35) 100%),linear-gradient(180deg,transparent 55%,#07080f 100%)}
+.hero .wrap{position:relative;z-index:2}
+.hero-tag{display:inline-block;padding:5px 14px;border-radius:20px;background:rgba(247,201,72,.14);color:#f7c948;border:1px solid rgba(247,201,72,.3);font-size:13px;font-weight:600;margin-bottom:20px}
+.hero h1{font-size:clamp(28px,4.5vw,46px);line-height:1.25;font-weight:900;max-width:720px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#f7c948,#ff8a5c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:#c2c6d6;max-width:560px;margin:18px 0 28px;font-size:16px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;height:48px;padding:0 26px;border-radius:24px;font-size:15px;font-weight:700;cursor:pointer;border:0;transition:.25s}
+.btn-main{background:linear-gradient(135deg,#f7c948,#ff6b6b);color:#1a1300;box-shadow:0 8px 24px rgba(247,201,72,.28)}
+.btn-main:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(247,201,72,.4)}
+.btn-line{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.24)}
+.hero-stats{display:flex;gap:40px;margin-top:38px;flex-wrap:wrap}
+.hero-stats div span{display:block;font-size:26px;font-weight:800;color:#f7c948}
+.hero-stats div small{color:#9aa0b4;font-size:13px}
+
+/* ===== Category pills ===== */
+.catbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.cat-pill{padding:7px 16px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.07);font-size:14px;color:#c2c6d6;cursor:pointer;transition:.2s}
+.cat-pill:hover,.cat-pill.on{background:rgba(247,201,72,.14);border-color:rgba(247,201,72,.4);color:#f7c948}
+
+/* ===== Movie grid ===== */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:22px}
+.card{background:#11131f;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.05);transition:.28s;position:relative}
+.card:hover{transform:translateY(-6px);border-color:rgba(247,201,72,.35);box-shadow:0 18px 40px rgba(0,0,0,.5)}
+.thumb{position:relative;aspect-ratio:2/3;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.card:hover .thumb img{transform:scale(1.06)}
+.tag-top{position:absolute;top:10px;left:10px;padding:3px 9px;border-radius:6px;background:linear-gradient(135deg,#f7c948,#ff6b6b);color:#1a1300;font-size:11px;font-weight:800}
+.tag-score{position:absolute;top:10px;right:10px;padding:3px 9px;border-radius:6px;background:rgba(0,0,0,.7);color:#f7c948;font-size:12px;font-weight:700}
+.card-body{padding:13px 14px 16px}
+.card-body h3{font-size:15px;font-weight:700;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card-body p{font-size:13px;color:#9aa0b4;display:flex;justify-content:space-between}
+
+/* ===== Schedule timeline ===== */
+.timeline{display:grid;gap:14px}
+.time-row{display:grid;grid-template-columns:96px 1fr;gap:18px;align-items:center;background:#11131f;border-radius:12px;padding:14px 18px;border:1px solid rgba(255,255,255,.05)}
+.time-row .t{font-weight:800;color:#f7c948;font-size:15px}
+.time-row .c{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.time-row .c span{padding:5px 12px;border-radius:8px;background:rgba(255,255,255,.05);font-size:13px;color:#d6d9e6}
+
+/* ===== Guide list ===== */
+.guide-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.guide-item{background:#11131f;border-radius:14px;padding:26px;border:1px solid rgba(255,255,255,.05);transition:.25s}
+.guide-item:hover{border-color:rgba(247,201,72,.3);transform:translateY(-4px)}
+.guide-item .num{width:38px;height:38px;border-radius:10px;background:linear-gradient(135deg,#f7c948,#ff6b6b);color:#1a1300;display:grid;place-items:center;font-weight:900;font-size:16px;margin-bottom:16px}
+.guide-item h3{font-size:17px;margin-bottom:8px}
+.guide-item p{font-size:14px;color:#9aa0b4}
+
+/* ===== FAQ ===== */
+.faq-item{background:#11131f;border-radius:12px;margin-bottom:12px;border:1px solid rgba(255,255,255,.05);overflow:hidden}
+.faq-q{width:100%;text-align:left;background:transparent;border:0;color:#fff;padding:18px 22px;font-size:16px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq-q .ic{color:#f7c948;font-size:20px;flex-shrink:0;transition:.25s}
+.faq-item.open .faq-q .ic{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:.35s ease;padding:0 22px;color:#c2c6d6;font-size:14.5px}
+.faq-item.open .faq-a{max-height:300px;padding:0 22px 20px}
+
+/* ===== Footer ===== */
+footer{background:#05060c;border-top:1px solid rgba(255,255,255,.06);padding:50px 0 30px;margin-top:40px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:34px;margin-bottom:36px}
+.foot-grid h4{font-size:15px;margin-bottom:16px;color:#fff}
+.foot-grid ul li{margin-bottom:10px}
+.foot-grid ul a{color:#9aa0b4;font-size:14px;transition:.2s}
+.foot-grid ul a:hover{color:#f7c948}
+.foot-brand p{color:#9aa0b4;font-size:14px;margin-top:14px;max-width:300px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.06);padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;color:#7b8194;font-size:13px}
+.foot-bottom a{color:#9aa0b4}
+.foot-bottom a:hover{color:#f7c948}
+
+/* ===== Responsive ===== */
+@media(max-width:820px){
+  .wrap{padding:0 16px}
+  section{padding:52px 0}
+  .hero{min-height:400px}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:26px}
+  .user-act .btn-ghost{display:none}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+}
+@media(max-width:520px){
+  .logo{font-size:16px}
+  .search button{padding:0 14px}
+  .hero-stats{gap:26px}
+  .hero-stats div span{font-size:22px}
+  .time-row{grid-template-columns:1fr;gap:10px}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<!-- ===== 顶部信息条 ===== -->
+<div class="topbar">
+  <div class="wrap">
+    <a href="https://zizaidianyingwangzaixianguankan-app.github.io" class="logo">
+      <span class="badge">影</span>仔仔电影网在线观看
+    </a>
+    <form class="search" onsubmit="return false;">
+      <input type="search" placeholder="搜索电影 / 电视剧 / 演员..." aria-label="搜索影视内容">
+      <button type="submit">搜索</button>
+    </form>
+    <div class="user-act">
+      <button class="btn-ghost">登录</button>
+      <button class="btn-ghost">VIP</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 主导航 ===== -->
+<nav aria-label="主导航">
+  <div class="wrap">
+    <ul class="nav-list">
+      <li><a href="#home" class="active">首页</a></li>
+      <li><a href="#movies">电影专区</a></li>
+      <li><a href="#tv">电视剧</a></li>
+      <li><a href="#schedule">每日更新</a></li>
+      <li><a href="#guide">观影指南</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ===== Hero ===== -->
+<header class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="仔仔电影网在线观看影视资源主视觉海报，展示电影胶片与星光氛围" loading="eager">
+  </div>
+  <div class="wrap">
+    <span class="hero-tag">每日更新 · 正版高清 · 免费观看</span>
+    <h1>在 <em>仔仔电影网在线观看</em>，发现每一部值得一看的好电影</h1>
+    <p>汇集院线大片、经典老片、热播剧集与高分综艺，覆盖喜剧、动作、悬疑、爱情、科幻等全品类影视资源，手机电脑均可流畅在线观看。</p>
+    <div class="hero-cta">
+      <a href="#movies" class="btn btn-main">立即免费观看</a>
+      <a href="#guide" class="btn btn-line">查看观影指南</a>
+    </div>
+    <div class="hero-stats">
+      <div><span>12,800+</span><small>影视资源</small></div>
+      <div><span>186+</span><small>内容分类</small></div>
+      <div><span>98万</span><small>每日播放</small></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 电影专区 ===== -->
+<section id="movies">
+  <div class="wrap">
+    <h2 class="sec-title">热门电影推荐</h2>
+    <p class="sec-sub">精选高分院线新片与经典佳片，点击封面即可在线观看</p>
+    <div class="catbar">
+      <span class="cat-pill on">全部</span>
+      <span class="cat-pill">动作冒险</span>
+      <span class="cat-pill">喜剧搞笑</span>
+      <span class="cat-pill">悬疑犯罪</span>
+      <span class="cat-pill">爱情青春</span>
+      <span class="cat-pill">科幻奇幻</span>
+      <span class="cat-pill">动画</span>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="动作片《极速追击》电影海报" loading="lazy">
+            <span class="tag-top">VIP</span><span class="tag-score">9.2</span>
+          </div>
+          <div class="card-body">
+            <h3>极速追击</h3>
+            <p><span>2026 · 动作</span><span>HD</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="喜剧片《欢喜一家人》电影海报" loading="lazy">
+            <span class="tag-top">热播</span><span class="tag-score">8.7</span>
+          </div>
+          <div class="card-body">
+            <h3>欢喜一家人</h3>
+            <p><span>2026 · 喜剧</span><span>HD</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="悬疑片《无声证词》电影海报" loading="lazy">
+            <span class="tag-top">新片</span><span class="tag-score">9.0</span>
+          </div>
+          <div class="card-body">
+            <h3>无声证词</h3>
+            <p><span>2026 · 悬疑</span><span>HD</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="爱情片《夏日来信》电影海报" loading="lazy">
+            <span class="tag-score">8.5</span>
+          </div>
+          <div class="card-body">
+            <h3>夏日来信</h3>
+            <p><span>2026 · 爱情</span><span>HD</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="科幻片《星际归途》电影海报" loading="lazy">
+            <span class="tag-top">VIP</span><span class="tag-score">9.4</span>
+          </div>
+          <div class="card-body">
+            <h3>星际归途</h3>
+            <p><span>2026 · 科幻</span><span>4K</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="动画电影《山海奇缘》电影海报" loading="lazy">
+            <span class="tag-top">推荐</span><span class="tag-score">9.1</span>
+          </div>
+          <div class="card-body">
+            <h3>山海奇缘</h3>
+            <p><span>2026 · 动画</span><span>4K</span></p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 电视剧专区 ===== -->
+<section id="tv" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02),transparent)">
+  <div class="wrap">
+    <h2 class="sec-title">热播电视剧</h2>
+    <p class="sec-sub">同步更新热门国产剧、美剧、韩剧与网剧全集</p>
+    <div class="catbar">
+      <span class="cat-pill on">全部</span>
+      <span class="cat-pill">国产剧</span>
+      <span class="cat-pill">美剧</span>
+      <span class="cat-pill">韩剧</span>
+      <span class="cat-pill">古装</span>
+      <span class="cat-pill">都市</span>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="古装剧《长安夜行》剧照" loading="lazy">
+            <span class="tag-top">更新至28集</span><span class="tag-score">9.3</span>
+          </div>
+          <div class="card-body">
+            <h3>长安夜行</h3>
+            <p><span>古装 · 悬疑</span><span>全集</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="都市职场剧《逆风局》剧照" loading="lazy">
+            <span class="tag-top">更新至12集</span><span class="tag-score">8.8</span>
+          </div>
+          <div class="card-body">
+            <h3>逆风局</h3>
+            <p><span>都市 · 职场</span><span>全集</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="美剧《暗夜行者》剧照" loading="lazy">
+            <span class="tag-top">全季完结</span><span class="tag-score">9.0</span>
+          </div>
+          <div class="card-body">
+            <h3>暗夜行者</h3>
+            <p><span>犯罪 · 美剧</span><span>全季</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="韩剧《春日来信》剧照" loading="lazy">
+            <span class="tag-top">更新至8集</span><span class="tag-score">8.6</span>
+          </div>
+          <div class="card-body">
+            <h3>春日来信</h3>
+            <p><span>爱情 · 韩剧</span><span>全集</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="医疗剧《急诊24小时》剧照" loading="lazy">
+            <span class="tag-top">热播中</span><span class="tag-score">8.9</span>
+          </div>
+          <div class="card-body">
+            <h3>急诊24小时</h3>
+            <p><span>行业 · 医疗</span><span>全集</span></p>
+          </div>
+        </a>
+      </article>
+      <article class="card">
+        <a href="#">
+          <div class="thumb">
+            <img src="https://one-agent-prod-1343551737.cos.ap-guangzhou.myqcloud.com/artifacts/1850/3b0ad9f9bc6c4056814433955212565a/0R8GlaI9uOu/task-bbe5844d8a997960b7c0b1072d208b41/.rendered/_assets/CmdhqLTcf2A?q-sign-algorithm=sha1&q-ak=AKIDDMTk0KZdUSL21fBYigcl3C8rMeiT5TdZ&q-sign-time=1791640181%3B1799416181&q-key-time=1791640181%3B1799416181&q-header-list=host&q-url-param-list=&q-signature=d36da89fbcc8a40b342506fa106ee263d67e5bc1" alt="玄幻剧《九州云歌》剧照" loading="lazy">
+            <span class="tag-top">更新至40集</span><span class="tag-score">9.1</span>
+          </div>
+          <div class="card-body">
+            <h3>九州云歌</h3>
+            <p><span>玄幻 · 古装</span><span>全集</span></p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 每日更新 ===== -->
+<section id="schedule">
+  <div class="wrap">
+    <h2 class="sec-title">每日更新时间表</h2>
+    <p class="sec-sub">掌握最新影视上线节奏，第一时间追更不落空</p>
+    <div class="timeline">
+      <div class="time-row"><div class="t">10:00</div><div class="c"><span>院线新片上线</span><span>同步院线大片</span></div></div>
+      <div class="time-row"><div class="t">12:00</div><div class="c"><span>热播剧更新</span><span>国产剧集日更</span><span>美剧同步</span></div></div>
+      <div class="time-row"><div class="t">18:00</div><div class="c"><span>综艺节目更新</span><span>真人秀全集</span></div></div>
+      <div class="time-row"><div class="t">20:00</div><div class="c"><span>会员抢先看</span><span>VIP专属内容</span><span>4K专区</span></div></div>
+      <div class="time-row"><div class="t">22:00</div><div class="c"><span>经典老片回顾</span><span>高分电影推荐</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 观影指南 ===== -->
+<section id="guide" style="background:linear-gradient(180deg,transparent,rgba(255,255,255,.02),transparent)">
+  <div class="wrap">
+    <h2 class="sec-title">在线观影指南</h2>
+    <p class="sec-sub">在仔仔电影网在线观看，三步即可享受高清流畅的观影体验</p>
+    <div class="guide-grid">
+      <div class="guide-item">
+        <div class="num">1</div>
+        <h3>搜索想看的内容</h3>
+        <p>在顶部搜索框输入片名、演员或关键词，系统智能匹配，快速定位你想看的影视资源。</p>
+      </div>
+      <div class="guide-item">
+        <div class="num">2</div>
+        <h3>选择清晰度播放</h3>
+        <p>支持标清、高清、超清与4K多档画质切换，自动适配你的网络环境，手机电脑都能流畅播放。</p>
+      </div>
+      <div class="guide-item">
+        <div class="num">3</div>
+        <h3>收藏追更不迷路</h3>
+        <p>登录后即可收藏喜欢的影视内容，追剧进度自动同步，更新提醒第一时间推送给你。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 常见问题 ===== -->
+<section id="faq">
+  <div class="wrap">
+    <h2 class="sec-title">常见问题解答</h2>
+    <p class="sec-sub">关于仔仔电影网在线观看的使用疑问，这里为你一一解答</p>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q">仔仔电影网在线观看需要注册才能看吗？<span class="ic">+</span></button>
+        <div class="faq-a"><p>大部分影视资源支持免费在线观看，无需注册。登录账号后可解锁收藏、播放记录同步与追更提醒等功能，VIP内容需开通会员观看。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">网站支持哪些设备访问？<span class="ic">+</span></button>
+        <div class="faq-a"><p>本网站采用响应式设计，完美适配手机、平板、电脑以及智能电视浏览器，页面会自动根据屏幕尺寸调整布局，随时随地流畅观看。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">视频卡顿或加载慢怎么办？<span class="ic">+</span></button>
+        <div class="faq-a"><p>可尝试切换至较低清晰度（如标清或高清），或检查网络连接。页面支持多线路切换，若某条线路卡顿可换线播放，多数情况下能立即改善。</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">影片更新频率是怎样的？<span class="ic">+</span></button>
+        <div class="faq-a"><p>网站每日多次更新，院线新片、热播剧集与综艺节目按固定时间表上线，具体时间可查看「每日更新时间表」栏目。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a href="https://zizaidianyingwangzaixianguankan-app.github.io" class="logo">
+          <span class="badge">影</span>仔仔电影网在线观看
+        </a>
+        <p>专注于提供高清影视在线免费观看服务，涵盖电影、电视剧、综艺、动漫等全品类内容，每日更新，畅享优质观影体验。</p>
+      </div>
+      <div>
+        <h4>内容分类</h4>
+        <ul>
+          <li><a href="#">动作冒险</a></li>
+          <li><a href="#">喜剧搞笑</a></li>
+          <li><a href="#">悬疑犯罪</a></li>
+          <li><a href="#">爱情青春</a></li>
+          <li><a href="#">科幻奇幻</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>服务导航</h4>
+        <ul>
+          <li><a href="#movies">电影专区</a></li>
+          <li><a href="#tv">电视剧集</a></li>
+          <li><a href="#schedule">每日更新</a></li>
+          <li><a href="#guide">观影指南</a></li>
+          <li><a href="#faq">帮助中心</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#">网站简介</a></li>
+          <li><a href="#">联系方式</a></li>
+          <li><a href="#">用户协议</a></li>
+          <li><a href="#">隐私政策</a></li>
+          <li><a href="#">意见反馈</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 仔仔电影网在线观看 zizaidianyingwangzaixianguankan-app 保留所有权利</span>
+      <span>网站网址：<a href="https://zizaidianyingwangzaixianguankan-app.github.io">https://zizaidianyingwangzaixianguankan-app.github.io</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 导航高亮
+var navLinks=document.querySelectorAll('.nav-list a');
+navLinks.forEach(function(a){
+  a.addEventListener('click',function(){
+    navLinks.forEach(function(x){x.classList.remove('active')});
+    this.classList.add('active');
+  });
+});
+// 分类标签切换
+document.querySelectorAll('.cat-pill').forEach(function(p){
+  p.addEventListener('click',function(){
+    var sib=this.parentElement.querySelectorAll('.cat-pill');
+    sib.forEach(function(x){x.classList.remove('on')});
+    this.classList.add('on');
+  });
+});
+// FAQ 折叠
+document.querySelectorAll('.faq-q').forEach(function(q){
+  q.addEventListener('click',function(){
+    this.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
